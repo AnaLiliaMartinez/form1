@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" type="text/css" href="css/icastheme.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.css"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+   <center><div data-role="header" data-add-back-btn="true">
+     <h1>Información del personal</h1>
+    </div></center>
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+       <center><form name="formulario" method="post" enctype="application/x-www-form-urlencoded" id="formulario">
+    <fieldset> 
+    <legend>Ingrese sus datos</legend>
+    <div>
+    <label for="nombre">Nombre(s):</label><br>
+    <input type="text" name="nombre" id="nombre" maxlength="100" placeholder="Ingrese su nombre">
+    </div>
+    <div>
+    <label for="apellido">Apellidos:</label><br>
+    <input type="text" name="apellido" id="apellido" maxlength="100" placeholder="Ingrese su apellido">
+    </div>
+    <br><br>
+    <div>
+    <label for="fechaN">Fecha de nacimiento</label>
+        <input type="date" id="fechaN" name="fechaN">
+        </div>
+         <div>
+    <label for="dirección">Direcci&oacute;n:</label><br>
+    <input type="text" name="direccion" id="direccion" maxlength="250" placeholder="Escribe tu direccion&oacute;n">
+    </div> 
+    <div>
+   <label for="telefono">Tel&eacute;fono:</label><br>
+   <input type="text" name="telefono" id="telefono" maxlength="11" placeholder="Escribe tu tel&eacute;fono">
+   </div>
+    <div> 
+    <label for="url">Sitio web:</label><br>
+    <input type="text" name="url" id="url" maxlength="250" placeholder="Escribe tu sitio web">
+   </div>
+    <div>
+    <label for="email">Email:</label><br>
+    <input type="text" name="email" id="email" maxlength="200" placeholder="Escribe tu email">
+    </div>
+   
+  
+   <div>
+   <br>
+   <label for="civil">Estado civil: </label><br>
+   <input type="checkbox">Casad@
+   <input type="checkbox">Solter@
+   <br><br>
+   </div>
+   <label for="color" >Color favorito: </label>
+        <input type="color" id="color" name="color"><br><br>
+        <label for="genero"> Género</label>
+        <select id="genero" name="genero">
+        <option> Femenino</option>
+        <option> Masculino</option>
+        </select><br><br>
+        </fieldset><br>
+   <div>
+   <label for="mensaje">Anota a continuación las experiencias de trabajo que has tenido en ésta empresa</label><br>
+   <textarea name="mensaje" id="mensaje" rows="10" cols="50" maxlength="1000" placeholder="Escribe tu mensaje"></textarea>
+   </div>
+   <div>
+   <label for="mensaje">¿Tienes alguna sugerencia para mejorar nuestros servicios? Escribela(s):</label><br>
+   <textarea name="mensaje" id="mensaje" rows="10" cols="50" maxlength="1000" placeholder="Escribe tu mensaje"></textarea>
+   </div>
+   <label for="mensaje">¿Tienes preparacion escolar suficiente para trabajar aquí?</label><br>
+   <input type="radio">Deficiente
+   <input type="radio">Suficiente
+   <br><br>
+   
+   <div>
+   <label for="mensaje">¿Cómo fue que se enteró de la vacante que se ofrece?</label><br>
+   <select id="vacante" name="vacante">
+        <option>Amigos</option>
+        <option>Familiares</option>
+        <option>Publicidad</option>
+        <option>Otros</option>
+        </select><br><br>
+   </div>
+   
+   <div>
+   <button type="button" name="enviar" id="enviar">Enviar</button>
+   <input type="reset" name="limpiar" id="limpiar" value="Limpiar"/>
+    </fieldset>
+    
+    </form>
+    <br><br>
+    
+       
+      <div data-role="footer" data-theme="a">
+      <h4>Gracias por tu preferencia!</h4>
+      <img src="res/android/mdpi.png">
+      </div>
+      </div>
+      </div></center>
+      
+</body>
+</html>
